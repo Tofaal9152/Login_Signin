@@ -7,7 +7,7 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 
 import { FaVk } from "react-icons/fa";
 
-const Login = () => {
+const Signin = () => {
   const [Checkedddd, setCheckedddd] = useState(false);
   return (
     <div className="flex flex-col items-center justify-center">
@@ -15,7 +15,7 @@ const Login = () => {
       <div className="fontimonti text-center flex flex-col items-center justify-center space-y-4">
         <img className="Heading w-[62px]" src={brain} alt="" />
         <h1 className="text-[#6408DC] text-3xl font-bold">PolyGrot</h1>
-        <p className="text-[#7C8092]">Welcome Back!</p>
+        <p className="text-[#7C8092]">Sign Up Now!</p>
         <div className="flex items-center justify-center space-x-2">
           <div className=" bg-[#F4F6FA] rounded-md p-2 cursor-pointer ">
             <FaVk size={23} />
@@ -27,7 +27,7 @@ const Login = () => {
             <img className="w-[25px]" src={xxx} alt="" />
           </div>
         </div>
-        <p className="text-[#7C8092]">Login with Email</p>
+        <p className="text-[#7C8092]">With Email</p>
       </div>
       {/* Second */}
       <div className="flex flex-col items-start space-y-10">
@@ -56,25 +56,22 @@ const Login = () => {
               id=""
             />
           </div>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <input checked={Checkedddd} type="checkbox" name="" id="" />
-              <p
-                onClick={() => setCheckedddd((e) => !e)}
-                className="font-semibold cursor-pointer"
-              >
-                Remember me
-              </p>
-            </div>
-            <p className="font-semibold cursor-pointer">Forgot Password?</p>
+          <div className="flex items-center space-x-2">
+            <input checked={Checkedddd} type="checkbox" name="" id="" />
+            <p
+              onClick={() => setCheckedddd((e) => !e)}
+              className="font-semibold cursor-pointer"
+            >
+              Remember me
+            </p>
           </div>
         </div>
         <button className="bg-[#9747ff]  w-full text-center  hover:bg-violet-600 duration-300 text-white font-semibold py-2 px-4 border rounded-lg">
-          Log in
+          Sign Up
         </button>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signin;
